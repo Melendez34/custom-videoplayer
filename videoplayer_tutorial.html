@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Player</title>
+    <link rel="stylesheet" href="css/video-player.css" />
+    <script src="js/custom-player.js"></script>
+  </head>
+  <body>
+    <!--Controls-->
+    <main class="player">
+      <!--Video-->
+      <video
+        src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+        poster="svg/mediaVideo.svg"
+      ></video>
+      <nav class="controls">
+        <button class="button play">
+          <img src="svg/play.svg" alt="icon play" />
+        </button>
+        <button class="button stop">
+          <img src="svg/stop.svg" alt="icon stop" />
+        </button>
+        <input type="range" name="progressBar" id="progress-bar" />
+        <small class="timestamp"> 00:00 </small>
+      </nav>
+    </main>
+  </body>
+</html>

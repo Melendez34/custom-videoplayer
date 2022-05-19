@@ -1,0 +1,69 @@
+/* General */
+
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+html {
+  font-family: sans-serif;
+  background-color: lightgray;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Controls */
+
+.controls {
+  /* visibility: hidden; */
+  padding: 1rem;
+  opacity: 0.8;
+  /* width: 200px; */
+  border-radius: 5px;
+  /* position: absolute; */
+  /* bottom: 20px; */
+  /* left: 20%; */
+  /* margin-left: -100px; */
+  transition: 1s all;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.controls button {
+  cursor: pointer;
+}
+.controls input {
+  cursor: pointer;
+}
+.controls small {
+  cursor: default;
+}
+.progress-bar {
+  flex-grow: 1;
+}
+.button {
+  background-color: transparent;
+  border: none;
+}
+
+.button img {
+  width: 24px;
+}
+
+/* Player */
+
+.player {
+  background-color: gray;
+  box-shadow: 2px 2px 1rem black;
+}
+
+.player:hover .controls,
+.player:focus-within .controls {
+  opacity: 1;
+}
