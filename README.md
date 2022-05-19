@@ -10,3 +10,7 @@ Custom kind of universal videoplayer on HTML.
 ## guia a seguir:
 
 > https://www.youtube.com/watch?v=i6bPvOGkDFQ
+
+## mas documentacion:
+
+> https://html.spec.whatwg.org/#video
