@@ -14,3 +14,4 @@ Custom kind of universal videoplayer on HTML.
 ## mas documentacion:
 
 > https://html.spec.whatwg.org/#video
+> https://www.w3.org/2011/audio/drafts/1WD/MediaStream/#mediastream-extensions
