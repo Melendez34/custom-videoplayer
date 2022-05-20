@@ -1,5 +1,4 @@
 /* General */
-
 * {
   box-sizing: border-box;
 }
@@ -15,6 +14,25 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Player */
+.player {
+  width: 70%;
+  background-color: gray;
+  box-shadow: 2px 2px 1rem black;
+  max-width: 1280px;
+  min-width: 320px;
+}
+
+.player:hover .controls,
+.player:focus-within .controls {
+  opacity: 1;
+}
+
+.video {
+  width: 100%;
+  cursor: pointer;
 }
 
 /* Controls */
@@ -44,26 +62,16 @@ body {
 .controls small {
   cursor: default;
 }
-.progress-bar {
-  flex-grow: 1;
-}
 .button {
   background-color: transparent;
   border: none;
 }
-
 .button img {
   width: 24px;
 }
-
-/* Player */
-
-.player {
-  background-color: gray;
-  box-shadow: 2px 2px 1rem black;
+.progress-bar {
+  flex-grow: 1;
 }
-
-.player:hover .controls,
-.player:focus-within .controls {
-  opacity: 1;
+.timestamp {
+  font-size: 1.2rem;
 }
