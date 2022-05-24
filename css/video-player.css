@@ -18,7 +18,6 @@ body {
 
 /* Player */
 .player {
-  width: 70%;
   background-color: gray;
   box-shadow: 2px 2px 1rem black;
   max-width: 1280px;
