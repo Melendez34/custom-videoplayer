@@ -5,6 +5,7 @@ const playButtonIcon = document.querySelector('.iconPlay');
 const pauseButtonIcon = document.querySelector('.iconPause');
 const stopButton = document.querySelector('.stop');
 const progressBar = document.querySelector('.progressBar');
+const timeStamp = document.querySelector('.timeStamp');
 
 //Listen for events
 video.addEventListener('click', playPauseVideo);
@@ -41,7 +42,11 @@ function setVideoProgress() {
 }
 
 function updateBarProgress() {
-  progressBar.value = Number((video.currentTime * 100) / video.duration);
+  progressBar.value = Number((video.currentTime / video.duration) * 100);
   let minutes = Math.floor(video.currentTime / 60);
-  console.log(minutes);
+  let seconds = Math.floor(video.currentTime % 60);
+  minutes < 10 ? (minutes = '0' + minutes) : Math.floor(video.currentTime / 60);
+  seconds < 10 ? (seconds = '0' + seconds) : Math.floor(video.currentTime % 60);
+
+  timeStamp.textContent = `${minutes}:${seconds}`;
 }

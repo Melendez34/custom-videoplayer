@@ -70,6 +70,8 @@ body {
 }
 .progress-bar {
   flex-grow: 1;
+  background: transparent;
+  width: 100%;
 }
 .timestamp {
   font-size: 1.2rem;
